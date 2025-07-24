@@ -171,3 +171,77 @@ footer{
     text-align: center;
     background-color: #000;
 }
+
+/* Estilos para pantallas de 768px o menos (tablets y móviles) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .overlay h2 {
+    font-size: 32px;
+  }
+
+  .overlay p {
+    font-size: 16px;
+  }
+
+  .seccion {
+    padding: 40px 20px;
+  }
+
+  .seccion h2 {
+    font-size: 28px;
+  }
+
+  .skills {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .proyecto {
+    padding: 15px;
+  }
+
+  .proyecto img {
+    max-width: 100%;
+  }
+
+  .btn, .proyecto a {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+
+/* Estilos para pantallas muy pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+  .overlay h2 {
+    font-size: 24px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .overlay {
+    padding: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .skills li {
+    width: 100%;
+    text-align: center;
+  }
+}
